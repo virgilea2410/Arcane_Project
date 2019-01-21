@@ -1,4 +1,5 @@
 import flask
+from flask_cors import CORS
 import pymongo
 import json
 
@@ -12,6 +13,7 @@ GOOD_DOC_NAME = "MainGoods"
 USERS_DOC_NAME = "Users"
 
 app = flask.Flask(__name__)
+cors = CORS(app)
 
 
 @app.route("/goods/edit", methods=["POST"])
