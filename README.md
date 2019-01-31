@@ -23,3 +23,9 @@ How the endpoints works :
   - http://localhost:9999/goods/search_by_city : 
     GET request with 1 argument :
         * req_city : the city from which we want to find goods
+
+
+Améliorations : 
+  - Plus de requetes GET
+  - Le code n'est pas assez commenté
+  - les code de retour HTTP ne sont pas tous bons (ils sont tous égaux à 200), alors qu'il faudrait renvoyer, notamment, un code 400 lorsque les arguments des requêtes sont mauvais.
